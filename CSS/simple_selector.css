@@ -1,0 +1,52 @@
+/* universal selector */
+/* browser  have some margin and padding we can set margin and padding of the browser */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* element selector */
+/* h1{
+    color: aqua;
+    text-align: center;
+    background-color: yellow;
+}
+p{
+    color: black;
+    font-size: 30px;
+    background-color: green;
+
+} */
+
+/* class selector */
+/* .heading{
+    color: red;
+    font-size: 40px;
+}
+.hello{
+    color: orange ;
+    font-size: 30px;
+}
+.pra{
+    color: blue;
+    font-size: green;
+} */
+
+/* id selector */
+/* id always give unique  */
+/* #id1{
+    color: pink;
+    font-size: 40px;
+    background-color: orange ;
+}
+#id2{
+    color: bisque;
+    font-size: 43px;
+} */
+
+/* selector list */
+/* in this simple selector we can right style for many ids, classes, tags  together*/
+/* .heading,#id2{
+    color: gray;
+    font-size:40px;
+} */

@@ -1,0 +1,34 @@
+body{
+    background-color: yellow;
+}
+/* decendent selector */
+/* decendent means agrag means uske under jitne bhi p name ke tag hai sab par lga do  */
+/* decendent m herarchy allowed hai  */
+/* main p{
+    color: pink;
+    font-size: 40px;
+} */
+
+/* child selector */
+/* child m herarchy is not allowed */
+/* h2 > p {
+    color: red;
+} */
+
+/* Adjecent sibling selector */
+/* phle wale par css nhi lgegi only second wali per hi css lagegi  */
+/* section + p {
+    color: green;
+} */
+
+/* general sibbling selector */
+/* section ~p {
+    color: grey;
+} */
+
+/* atribute selector */
+/* [target="_blank"]{
+    color: aqua;
+    text-decoration: none;
+} */
+

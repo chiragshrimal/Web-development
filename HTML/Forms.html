@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+        <!--fieldset ka use outline krne ke liye kiya jata hai   -->
+      <fieldset>
+        <!-- agar hme sbse upper kuch likhna  hai toh legend ka use krte hai  -->
+        <legend>fill Details !!</legend>
+        <!-- label ke for m id likhte hai  -->
+         <!-- or use under us chiz ko likhte hai jise pkdne pe for wali id ka input box highlight hota hai  -->
+        <label for="username">enter your name</label>
+        <!-- kisi element ko uniquely identify krne ke liye id di jati hai  -->
+        <!-- for name field ki maddt se data base ko help hoti hai  -->
+        <input
+          type="text"
+          name="username"
+          placeholder="username"
+          id="username"
+          required
+        />
+        <br />
+        <!-- ydi hme or bda text likhna hai toh hm textarea ka use krte hai-->
+         <label for="address"> enter your address</label>
+         <textarea name="address" id="address" rows="5" cols="15" required></textarea>
+         <br>
+        <label for="useremail">please enter your email</label>
+        <input
+          type="email"
+          name="Email"
+          id="useremail"
+          placeholder="@gmail.com"
+          required
+        />
+        <br />
+        <label for="userpassword"> password</label>
+        <input
+          type="password"
+          name="password"
+          id="userpassword"
+          placeholder="password"
+          required
+        />
+        <br />
+        <!-- if we want to give choice to the user and select any one  -->
+        <!-- islke liye radio ka use krte hai  nat checkbox -->
+        enter gender :<br />
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="male" required />
+        <br />
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="female"  required/>
+        <br />
+        <!-- if we want to choose multiple choisec -->
+        your faviourate movie's :
+        <br />
+        <label for="heropanti">Hearopanti</label>
+        <input type="checkbox" name="heropanti" id="heropanti"  />
+        <br />
+        <label for="hero">Hero</label>
+        <input type="checkbox" name="hero" id="hero"  />
+        <br />
+        <label for="guru">Guru</label>
+        <input type="checkbox" name="guru" id="guru" />
+        <br />
+        <!-- sumbmit ke liye  -->
+        <!-- ye broweser specific hota hai  -->
+        <input type="submit" value="submit form"  required/>
+      </fieldset>
+    </form>
+  </body>
+</html>

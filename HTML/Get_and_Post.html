@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get and Post</title>
+</head>
+<body>
+    <!-- methord ="get" ka use krne par url m information pass hoti hai  -->
+     <!-- server ko ye kese pta chlega ki ye konsa form hai kis chiz ka hai uske liye action ka use krte hai -->
+      <!-- ydi koi sensitive data bhejna hai toh method = post ka use krte hai isme information url se pass nhi hoti hai 
+       isme body se read krta hai server  -->
+    <form  method="post" action="/personal_information" target="_blank">
+        <fieldset>
+            <legend>personal information</legend>
+            <label for="fulname">Full name</label>
+            <input type="text" name="username" id="fulname" required >
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="useremail" id="email" required>
+            <br>
+            <label for="password">password</label>
+            <input type="password" name="userpassword" id="password" required>
+            <br>
+            Gender :
+            <br>
+            <!-- server par kese pta chlega ki male hai ya female  uske liye value ka use krte hai -->
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="male" required  value="male">
+            <br>
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="female" required value="female">
+            <br>
+            <label for="address">address</label>
+            <textarea name="address" id="address" rows="5" cols="15" required></textarea>
+            <br>
+            <input type="submit" value="Sign-up">
+
+        </fieldset>
+    </form>
+</body>
+</html>

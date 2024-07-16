@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>personal information</legend>
+            <label for="fulname">Full name</label>
+            <input type="text" name="username" id="fulname" required   autofocus>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="useremail" id="email" required placeholder="a@example.com">
+            <br>
+            <label for="password">password</label>
+            <input type="password" name="userpassword" id="password" required autofocus>
+            <br>
+            <label for="country">country</label>
+            <input type="text" name="country" id="country" value="India" readonly  disabled>
+            <br>
+            Gender :
+            <br>
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="male" required>
+            <br>
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="female" required>
+            <br>
+            <label for="address">address</label>
+            <textarea name="address" id="address" rows="5" cols="15" required></textarea>
+            <br>
+            <label for="number">number</label>
+            <input type="number" name="number" id="number" min="0" max="5">
+            <br>
+            <input type="submit" value="Sign-up">
+
+        </fieldset>
+    </form>
+</body>
+</html>

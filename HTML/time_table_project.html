@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project2</title>
+</head>
+<body>
+    <h1>Indian Institute of Information Technology Guwahati</h1>
+    <!-- apka kam bina thead or tbody ke bhi  chal jayega but react ka use krte time iske use krna hi pdega  -->
+    <table border  cellpading="20px" >
+        <!-- for heading ke liye thead ka use krte hai -->
+        <thead>
+            <tr>
+                <th colspan="7">Time table</th>
+            </tr>
+
+            <tr>
+                <th>Day/Lec</th>
+                <th>I <br>9:00-10:00</th>
+                <th> II <br>10:00-11:00</th>
+                <th> III <br>11:00-12:00</th>
+                <th> IV <br>12:00-1:00</th>
+                <th >Lunch</th>
+                <th> v <br>3:00-5:00</th>
+            </tr>
+        </thead>
+        <!-- data ke liye tbody ka  use krte hai -->
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Maths</td>
+                <td>chemistry</td>
+                <td>DBMS</td>
+                <td>TOC</td>
+                <td rowspan="5">lunch</td>
+                <td>Machine learning </td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Maths</td>
+                <td>Maths</td>
+                <td>DBMS</td>
+                <td>network</td>
+                <td>Machine learning </td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Maths</td>
+                <td>chemistry</td>
+                <td>network</td>
+                <td>TOC</td>
+                <td>Machine learning </td>
+            </tr>
+            <tr>
+                <td>Thrusday</td>
+                <td>network</td>
+                <td>chemistry</td>
+                <td>DBMS</td>
+                <td>TOC</td>
+                <td>Machine learning </td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>DBMS</td>
+                <td>chemistry</td>
+                <td>DBMS</td>
+                <td>TOC</td>
+                <td>Maths</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Maths</td>
+                <td>chemistry</td>
+                <td>DBMS</td>
+                <td>TOC</td>
+                <th colspan="2">No classes </th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

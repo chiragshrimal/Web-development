@@ -1,0 +1,13 @@
+.heading{
+    color:black;
+    text-align: center;
+    text-decoration: underline;
+    border: 1px dashed black;
+    font-size: 43px;
+}
+.pra{
+    color:black;
+    border: 1px dashed black;
+    font-size: 30px;
+
+}
