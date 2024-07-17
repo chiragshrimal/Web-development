@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes and element</title>
+    <style>
+        /* pseudo classes m single : ka use krte hai  */
+        /* pseudo class selector ka use krne ke liye phle tag/class/id ko likhte hai fir : lgate hai fir hover/focus/link/visited/active/first-child/lang/nth-child likhte hai  */
+        /*hover ka use button or link ke liye lkiya jata hai 
+        jab curcir uske upper leke jane par konsa color dikhega  */
+        a:hover{
+            color: black;
+        }
+        /* jab button ya link pr click krte hai tab konsa color  hota hai */
+        a:active{
+            color: pink;
+        }
+        /* agar ek bar bhi visit kiya hai toh visited wala color aa jata hai */
+        /* a:visited{
+            color: black;
+        } */
+        /* focus ka use hm generally  input ke liye krte hai  user ka focus bnane ke liye */
+        input:focus{
+            color: red;
+            background-color: black;
+            font-size: 50px;
+        }
+        /* first child ke liye kam krta hai */
+        a:first-child{
+            color:green;
+        }
+        /* this is for nth child and bracket m possition of child dete hai */
+        a:nth-child(3n+1){
+            color: black;
+        }
+        
+        /* pseudo  element m :: ka use krte hai  */
+        /* first line par kam krta hai */
+        p::first-line{
+            color: brown;
+        }
+
+        /* first letter par kam krta hai  */
+        p::first-letter{
+            color: blue;
+        }
+        /* iske bad kya  aayega  */
+        p::after{
+            content: "chirag";
+            color:orange ;
+        }
+
+        /* iske phle kya aayega  */
+        p::before{
+            content: "palasha";
+            color: green;
+        }
+        /* kisi ko select krne pe kesa dikhega  */
+        .selector::selection{
+            color: yellow;
+            background-color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <p class="hover">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod neque eos placeat sapiente, laudantium consequuntur! At ex rerum nemo labore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi id eos culpa repellendus, veniam quia dolorum hic quasi officiis animi at necessitatibus expedita fugit atque consequuntur ipsum est soluta excepturi doloremque sequi repudiandae tempore ratione pariatur. Magni amet nulla quis voluptatibus quo excepturi dolores deserunt ex architecto id, ea commodi?
+    </p>
+
+    <a href="https://www.google.com/">Google</a>
+    <hr>
+    <input type="text">
+    <hr>
+    <nav>
+        <a href="#">Flipkart</a>
+        <a href="@"> flipkart</a>
+        <a href="#">Flipkart</a>
+        <a href="@"> flipkart</a>
+        <a href="#">Flipkart</a>
+        <a href="@"> flipkart</a>
+    </nav>
+    <hr>
+    <div class="selector"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur fuga fugiat delectus est corrupti voluptatibus quaerat, iste, iusto, non eligendi nobis laboriosam. Possimus aspernatur hic repellendus. Dolorum saepe dignissimos illum unde laborum ullam deserunt, assumenda consequuntur adipisci perferendis aliquam quam.</div>
+</body>
+</html>

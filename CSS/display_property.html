@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <!-- display property se hm kisi bhi tag ko inline or block m convert kar skte hai  -->
+    <style>
+        p.inline{
+            display: inline;
+        }
+        span{
+            display:block ;
+        }
+        .in-bck{
+            /* inline-block ki help se test ko width or height de skte hai
+            and jitna chahiye utni hi jgh lo   */
+            display: inline-block;
+            width: 1000px;
+            color: red;
+        }
+        .none{
+            /* none ki help se hm text ko page se hide kar skte hain */
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p class="inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, labore.</p>
+    <p class="inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus alias doloribus eius quibusdam, dignissimos dolorum atque delectus eaque ad nostrum laborum iste ipsum sapiente nulla similique et quos quisquam. Rerum vero modi qui debitis non fugit ipsum facilis laudantium corrupti.</p>
+
+    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptas sed laudantium autem ipsum praesentium corporis perspiciatis perferendis tempore natus aut ratione ut quia accusamus obcaecati, ipsa repellendus qui expedita, nulla magnam neque repellat iure dolores enim. Expedita quod nam repellat dolores, sunt dolorum iure minima tempora corrupti incidunt et aspernatur deleniti, sed vero eius impedit fugit! Nesciunt et temporibus earum perferendis aperiam accusamus eaque quibusdam quas porro at, placeat dolore nobis autem vel architecto molestias expedita dolores reprehenderit aut tenetur ullam esse id quaerat! Perferendis totam repudiandae molestias officiis doloribus id quam quae animi quibusdam voluptates, praesentium, ipsum veniam.</span>
+
+    <p class="in-bck">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat quo consectetur nihil illo necessitatibus excepturi harum incidunt ab expedita impedit odio nesciunt ex sit, ea nobis et sint totam iusto cum laborum distinctio! At animi perspiciatis in! Eos, porro, saepe nemo deleniti illo voluptatibus ipsam veritatis, ducimus dolores necessitatibus beatae?</p>
+
+    <p class="none"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellat quia quasi alias, possimus, blanditiis hic, libero porro dolor explicabo consequuntur? Ipsa sequi nesciunt adipisci doloremque, tempore sint vero excepturi praesentium expedita reprehenderit. Omnis dolor ratione, provident quas natus repellat!</p>
+</body>
+</html>

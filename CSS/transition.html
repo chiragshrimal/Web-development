@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition and Tooltip</title>
+    <!-- transition smoothness ko lekar aata hai generally hm ise hover wgr hota hai tab use krte hai -->
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            transition: height 2s,width 2s;
+            /* ease  by default hota hai isme slow,fast,slow */
+            /* ease-in m slow start hota hai  */
+            /* ease-out m slow end hota hai */
+            /* ease-in-out m slow start and end hota hai  */
+            /* linear m same from start to end */
+            transition-timing-function: linear;
+            /* cursor le jane ke kitne time bad start hoga  */
+            /* transition-delay: 2s; */
+        }
+
+        div:hover{
+            height: 500px;
+            width: 500px;
+        }
+        /* tooltip like title hota hai image or link m use krte hai */
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <hr>
+    <a href="google.com" title="Google">Google</a>
+</body>
+</html>
