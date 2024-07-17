@@ -1,0 +1,63 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* jis bhi animation ko use kar rhe hai uska name  */
+    animation-name: colorchange;
+    animation-duration: 5s;
+    /* relative position ko change krne ke liye  */
+    position: relative;
+    animation-iteration-count: 5;
+    /* animation ko start hone m kitna time lgega that is delay */
+    animation-delay: 2s;
+    /* timing function speed ko btata hai */
+    /* animation-timing-function: linear; */
+    /* animation ki direction ko reverse krne par 100% se chalega */
+
+    /*  animation ki direction ko alter krne pe alternate aayega */
+    /* animation-direction: alternate-reverse; */
+}
+
+#ease{
+    animation-timing-function: ease;
+}
+#ease-in{
+    animation-timing-function: ease-in;
+}
+#ease-in-out{
+    animation-timing-function: ease-in-out;
+}
+#linear{
+    animation-timing-function: linear;
+}
+/* for animetion  */
+/* @keyframes se animation bna skte hai 
+isme do chiz deta hai from and to bole toh start to end */
+@keyframes colorchange{
+    0%{
+        background-color: blue;
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        background-color:yellow;
+        top: 0px;
+        left: 300px;
+      
+    }
+    50%{
+        background-color: black;
+        top: 300px;
+        left: 300px;
+    }
+    75%{
+        background-color: pink;
+        top: 300px;
+        left: 0px;
+    }
+    100%{
+        background-color: purple;
+        top: 0px;
+        left: 0px;
+    }
+}
