@@ -1,0 +1,51 @@
+/* ye saari ki saari ranges yaad rkhni hai  */
+div{
+    text-align: center;
+    font-size: x-large;
+}
+@media (max-width: 600px){
+    /* for small phones */
+    body{
+        background-color: red;
+    }
+    div::after{
+        content: "Small phones";
+    }
+}
+@media (min-width:600px){
+    /* for large phones */
+    body{
+        background-color: purple;
+    }
+    div::after{
+        content: "large phones";
+    }
+}
+
+@media (min-width:768px){
+    /* for tablets */
+    body{
+        background-color: blue;
+    }
+    div::after{
+        content: "Tablets";
+    }
+}
+@media (min-width:992px){
+    /* for large tablets */
+    body{
+        background-color: green;
+    }
+    div::after{
+        content: "large tablets";
+    }
+}
+@media (min-width:1200px){
+    /* for laptops */
+    body{
+        background-color: pink;
+    }
+    div::after{
+        content: "Laptop";
+    }
+}

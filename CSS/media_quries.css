@@ -5,8 +5,8 @@ div{
     font-size: xx-large;
     text-align: center;
 }
-/* media quries lgane ke liye @media ka use krte hai or usme css style likhte hai  likhte hai  */
-/* jiski width minimum 900px ya usse jyada hogi usi par hi ye apply hogi */
+/* media quries lgane ke liye @media ka use krte hai or usme css style likhte hai  */
+/* jiski width minimum 900px ya usse jyada hogi usi par hi ander likhi style  apply hogi */
 @media (min-width:900px){
     body{
         background-color: pink;
@@ -15,4 +15,22 @@ div{
         content: "Welcome to my platform";
     }
 
+}
+@media (min-width: 500px) and (max-width:900px){
+    body{
+        background-color: purple;
+    }
+    div::after{
+        content: "it is greater than 500px";
+    }
+
+}
+/* we can also use ranges */
+@media (1000px<=width<=1500px){
+    body{
+        background-color: yellowgreen;
+    }
+    div::after{
+        content: "it is greater than 1000px";
+    }
 }
