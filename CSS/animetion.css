@@ -3,19 +3,26 @@ div{
     height: 100px;
     background-color: red;
     /* jis bhi animation ko use kar rhe hai uska name  */
-    animation-name: colorchange;
-    animation-duration: 5s;
+    /* animation-name: colorchange;
+    animation-duration: 5s; */
     /* relative position ko change krne ke liye  */
     position: relative;
-    animation-iteration-count: 5;
+    /* animation-iteration-count: 2;
     /* animation ko start hone m kitna time lgega that is delay */
-    animation-delay: 2s;
+    /* animation-delay: 2s;  */
     /* timing function speed ko btata hai */
     /* animation-timing-function: linear; */
     /* animation ki direction ko reverse krne par 100% se chalega */
 
     /*  animation ki direction ko alter krne pe alternate aayega */
     /* animation-direction: alternate-reverse; */
+
+    /* forward ka matlab direction ke hisab se jo sbse last m aayega whi color final DENA HAIN */
+    /* backword m direction ke hisab se jo sbse phla hai whi phle ldikhai deta hai chahi staring m koi bhi color ku nhi ho final color m koi change nhi hota  hai  */
+    /* both m forward or n=backword dono ki property hoti hai  */
+    /* animation-fill-mode: both; */
+    /* short hand ka use kar skte hai   */
+    animation: colorchange 5s linear 2s infinite  forwards;
 }
 
 #ease{

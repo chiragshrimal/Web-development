@@ -1,0 +1,18 @@
+body{
+    background-color: red;
+}
+div{
+    font-size: xx-large;
+    text-align: center;
+}
+/* media quries lgane ke liye @media ka use krte hai or usme css style likhte hai  likhte hai  */
+/* jiski width minimum 900px ya usse jyada hogi usi par hi ye apply hogi */
+@media (min-width:900px){
+    body{
+        background-color: pink;
+    }
+    div::after{
+        content: "Welcome to my platform";
+    }
+
+}
