@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .cont{
+            border: 2px solid black;
+            height: 500px;
+            /* flex and inline flex same hi kam kete hai but inline-flex inline hota hai or flex block hota hai  */
+             display: flex;/* main axis m kam krta hai */
+            /* flex-direction: column-reverse; parent ke ander ka pura containt reverse ho jata hai */ 
+            /* page ko chota bda krne pe containt apne aap hi wrap ho jata hain */
+            /* flex-wrap: wrap; */
+
+            /* it is used to align the flex item along with the main axis of the container within the flex box layout  */
+            /* justify-content:space-around;same apace arount each element */
+
+            /* it is used to align flex element along with the cross axis of the container within the flexbox layout  */
+            /* align-items:center ; */
+
+            column-gap: 100px;
+
+
+
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: yellow;
+        }
+        .box3{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+    </div>
+</body>
+</html>

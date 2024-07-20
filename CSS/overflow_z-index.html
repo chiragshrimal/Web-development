@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow and Z-index</title>
+    <!-- overflow k amatlab jab containt upper chala jaye -->
+     <style>
+        p{
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            /* hidden m overflow wala containt hidden ho jata hai */
+            /* overflow: hidden; */
+            /* auto or scroll same hi hote hai isme overflow wala containt under chla jata hai */
+            overflow: scroll;
+        }
+        /* z-index */
+        /* jo bhi page pe likha hota hai uska by default stack 1 hota hai  */
+        .one{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            /* yha par position ka parent body hai  */
+            position: absolute;
+            top: 0;
+            /* lower z-index value higher dominante  */
+            z-index: -1;
+        }
+        .two{
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+        }
+     </style>
+</head>
+<body>
+    <!-- overflow -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam autem hic nisi? Placeat nisi, numquam quidem doloremque magnam tempora? Aut, accusamus molestias quo repellat deserunt at quidem voluptates praesentium, ex magni doloribus nihil magnam! Perspiciatis quas vel maxime? Laudantium eos fugiat magni ipsa! Dolorum commodi, dolor nulla possimus ullam iusto officia cumque, ducimus, molestiae maxime consectetur repellat repudiandae? Impedit tempora officiis laboriosam! Laudantium corrupti quam beatae illo eveniet placeat quos perferendis fuga dolores impedit repellat fugiat ea nam provident in aliquam nisi sed aperiam vero inventore, eaque error quaerat nostrum. Reiciendis nesciunt mollitia neque nemo assumenda, cumque tempore laudantium sunt.</p>
+
+    <!-- Z-index -->
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>
