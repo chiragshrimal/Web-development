@@ -9,8 +9,9 @@
             border: 2px solid black;
             height: 500px;
             /* flex and inline flex same hi kam kete hai but inline-flex inline hota hai or flex block hota hai  */
-             display: flex;/* main axis m kam krta hai */
-            /* flex-direction: column-reverse; parent ke ander ka pura containt reverse ho jata hai */ 
+            /* flex ki remaining properties ko lgane ke liye dispaly  dena  pdega  */
+            display: flex; /*main axis m kam krta hai */
+            flex-direction: row; /*parent ke ander ka pura containt reverse ho jata hai */
             /* page ko chota bda krne pe containt apne aap hi wrap ho jata hain */
             /* flex-wrap: wrap; */
 
@@ -18,11 +19,18 @@
             /* justify-content:space-around;same apace arount each element */
 
             /* it is used to align flex element along with the cross axis of the container within the flexbox layout  */
+            /* isme strech tab hi kam krta hai jab apne alag se height or width nhi di ho wrna height or width use overwrite kar deta hai  */
+            /* line pe kam krta hai linre ko center m leke aata hai  */
             /* align-items:center ; */
 
-            column-gap: 100px;
+            /* only gap likhen pe row or colunm dono m apply ho jata hai ydi hme only ek m hi lgana hia toh specify krna pdega  */
+             /* gap: 100px; */
+            /* same like justify-content ki trh kam krta hai but ye cross axis m align krt hai */
 
-
+            /* pura ka pura content hi center m aa jata hai */
+            /* align-content: center; */
+            /* flex-flow m flex-direction and flex-wrap dete hai */
+            /* flex-flow: row wrap; */
 
         }
         .box{
@@ -31,18 +39,53 @@
         }
         .box1{
             background-color: red;
+            /* order: 1;
+            flex-grow:2;
+            flex-shrink: 3; */
+            /* page render hote time kitna size dikhega  flex-basis  */
+            /* flex-basis: 2; */
+            /* flex m grow flex-shrink flex-basis btate hai  */
+            /* flex: 2 0 200px; */
+            /* align -self se position decide ker skte hai  */
+            /* ye main-axis ke trf align hota hai  */
+            /* align-self:center ; */
+
         }
         .box2{
             background-color: yellow;
+            order: 2;
+            flex-grow: 3;
+            flex-shrink: 1;
         }
         .box3{
             background-color: green;
+            order: 100;
+            flex-grow: 4;
+            flex-shrink: 2;
         }
 
     </style>
 </head>
 <body>
     <div class="cont">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
         <div class="box box1">box1</div>
         <div class="box box2">box2</div>
         <div class="box box3">box3</div>
