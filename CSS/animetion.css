@@ -3,8 +3,8 @@ div{
     height: 100px;
     background-color: red;
     /* jis bhi animation ko use kar rhe hai uska name  */
-    /* animation-name: colorchange;
-    animation-duration: 5s; */
+    animation-name: colorchange;
+    /* animation-duration: 5s;  */
     /* relative position ko change krne ke liye  */
     position: relative;
     /* animation-iteration-count: 2;

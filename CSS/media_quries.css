@@ -20,7 +20,7 @@ div{
     body{
         background-color: purple;
     }
-    div::after{
+    div::after{      
         content: "it is greater than 500px";
     }
 
