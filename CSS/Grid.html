@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .Grid_container{
+            border: 2px solid black;
+            height: 500px;
+            /* in case of grid, display grid likhne se grid nhi bnti hai ony layout bnta hai   */
+            display: grid;
+            /* fr means fraction of screen size */
+            grid-template-columns: repeat(3,1fr);
+            /* grid-template-areas: "nav  nav nav "
+                                  "side article article"
+                                  "footer footer footer"; */
+            /* item ko main axis ke along center par leke aata haui*/
+            /* justify-items: center;  */
+                 /* items ko cross axis ke m align krta hai  */
+            /* align-items: center; */
+            /* pure ke pure content ko center m leke aata hai along the x axis
+            justify content or align content ka use tab krte hai jab hmara container ka size bda hai or grid ka size chota  */
+            /* justify-content: center; */
+            /* pure ke pure content ko center m leke aata hai along the y axis */
+            /* align-content: center; */
+        }
+
+        .item{
+            height: 100px;
+            width: 100px;
+        }
+        .item1{
+            background-color: red;
+            /* grid-area: nav; */
+        }
+        .item2{
+            background-color: green;
+            /* grid-area: side; */
+        }
+        .item3{
+            background-color: yellow;
+            /* grid-area: article; */
+        }
+        .item4{
+            background-color: blue;
+            /* grid-area: footer; */
+            /* if we want that item 4 will be placed at position at 1  is case m item 1 thoda aage chala jayega  */
+            /* we can also  use the grid-row-start or eld like  */
+            /* grid-column: 1/3;
+            grid-row: 1/3; */
+            /* with the cell property  */
+            justify-self: center;
+            align-self: center;
+        }
+        .item5{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="Grid_container">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <div class="item item4">item4</div>
+        <div class="item item5">item5</div>
+    </div>
+    
+</body>
+</html>

@@ -21,7 +21,7 @@
 
             /* it is used to align flex element along with the cross axis of the container within the flexbox layout  */
             /* isme strech tab hi kam krta hai jab apne alag se height or width nhi di ho wrna height or width use overwrite kar deta hai  */
-            /* line pe kam krta hai linre ko center m leke aata hai  */
+            /* line pe kam krta hai line ko us row ke center m leke  aata hai  */
             /* align-items:center ; */
 
             /* only gap likhen pe row or colunm dono m apply ho jata hai ydi hme only ek m hi lgana hia toh specify krna pdega  */
@@ -54,15 +54,17 @@
         }
         .box2{
             background-color: yellow;
-            order: 2;
-            flex-grow: 3;
+            /* order: 2; */
+            /* flex-grow: 3; */
             flex-shrink: 1;
         }
         .box3{
             background-color: green;
-            order: 100;
+            /* order: 100;
             flex-grow: 4;
-            flex-shrink: 2;
+            flex-shrink: 2; */
+            /* perticular is hi ellement ko center m leke aayega  */
+            align-self: center;
         }
 
     </style>
