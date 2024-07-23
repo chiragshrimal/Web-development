@@ -3,57 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create navbar Multicolor</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Challenge2 Card design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
         *{
-            margin: 0;
-            padding: 0;
-        }
-        /* create variable in css using --name-  krke bna skte hai */
-        :root{
-            --primary-color:rgb(4, 124, 4);
-            --text-color:white;
-            --secondary-color:rgb(136, 194, 136);
+            margin: 0px;
+            padding: 0px;
         }
         body{
-            background-color:var(--secondary-color);
+            background-color: gray;
             font-family: "Poppins", sans-serif;
+            display: flex;
         }
-        nav{
-            background-color: var(--primary-color);
+        .card{
+            background-color: white;
+            border-radius: 15px;
+            padding: 15px  ;
+            margin: 5px ;
+            width: 250px;
+            height:450px;
+            /* position: relative;
+            top: 50px;
+            left: 500px; */
         }
-        ul li{
-            list-style: none;
-            display: inline;
-            padding: 20px;
-            font-size: larger;
+        img{
+            border-radius:7px;
         }
-      li a{
-        color: var(--text-color);
-        text-decoration: none;
-      }
-      li a:hover{
-        color: black;
-      }
-      li a:active{
-        color: blueviolet;
-      }
-        
+        .capsule span{
+            border: 2px solid gray;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: small;
+            width: 400px;
+
+        }
+        .capsule{
+            margin: 5px;
+        }
+        .nature{
+            margin-top: 5px;
+        }
+        h2{
+            margin: 2px;
+        }
+        .content{
+            font-size: small;
+            width: 240px;
+            color: grey;
+            padding: 2px;
+            margin: 2px;
+        }
+        footer button{
+            color: blue;
+            border-radius: 9px;
+            width: 90px;
+            height: 30px;
+            font-size: small;
+            margin-top: 15px;
+            border: 1px solid white;
+            background-color: rgb(194, 194, 239);
+        }
+        footer{
+            text-align: center;
+        }
+        footer button:hover{
+            background-color: rgb(176, 181, 215);
+            color: blueviolet;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contact us</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="card">
+        <img src="https://wallpaperaccess.com/full/4723250.jpg" alt=" logo " width="240px" >
+        <br> 
+        <div class="capsule">
+            <span class="nature">nature</span>
+            <span>view</span>
+        </div>
+        <h2>Great</h2>
+        <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea unde numquam provident odio! Sint ex cum totam earum corporis sunt accusantium ut nisi accusamus, ullam laborum reprehenderit, architecto magni. Lorem ipsum </p>
+    </div>
+    <footer>
+        <button>View More</button>
+    </footer>
+    </div>
+    <div class="card">
+        <img src="https://wallpaperaccess.com/full/4723250.jpg" alt=" logo " width="240px" >
+        <br> 
+        <div class="capsule">
+            <span class="nature">nature</span>
+            <span>view</span>
+        </div>
+        <h2>Great</h2>
+        <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea unde numquam provident odio! Sint ex cum totam earum corporis sunt accusantium ut nisi accusamus, ullam laborum reprehenderit, architecto magni. Lorem ipsum </p>
+    </div>
+    <footer>
+        <button>View More</button>
+    </footer>
+    </div>
+    <div class="card">
+        <img src="https://wallpaperaccess.com/full/4723250.jpg" alt=" logo " width="240px" >
+        <br> 
+        <div class="capsule">
+            <span class="nature">nature</span>
+            <span>view</span>
+        </div>
+        <h2>Great</h2>
+        <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea unde numquam provident odio! Sint ex cum totam earum corporis sunt accusantium ut nisi accusamus, ullam laborum reprehenderit, architecto magni. Lorem ipsum </p>
+    </div>
+    <footer>
+        <button>View More</button>
+    </footer>
+    </div>
+    <div class="card">
+        <img src="https://wallpaperaccess.com/full/4723250.jpg" alt=" logo " width="240px" >
+        <br> 
+        <div class="capsule">
+            <span class="nature">nature</span>
+            <span>view</span>
+        </div>
+        <h2>Great</h2>
+        <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea unde numquam provident odio! Sint ex cum totam earum corporis sunt accusantium ut nisi accusamus, ullam laborum reprehenderit, architecto magni. Lorem ipsum </p>
+    </div>
+    <footer>
+        <button>View More</button>
+    </footer>
+    </div>
 </body>
 </html>
