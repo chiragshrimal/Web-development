@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and cascade</title>
+    <style>
+        .box{
+            color: red;
+        }
+        .box1{
+            color: blue;
+        }
+        .box2{
+            color: brown;
+        }
+        /* specificity is 10 */
+        .box3{
+            color: green;
+        }
+        /* specoficity is 1 */
+        div{
+            color: gray;
+        }
+        /* specificity is 1+10=11 */
+        div.box{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1 box2 box3"> hello my name is chirag  data-x="</div>
+</body>
+</html>
