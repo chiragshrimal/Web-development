@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultra Edit</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: small;
+      }
+      /* *{
+            margin: 0;
+            padding: 0;
+        } */
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 80px;
+        align-items: center;
+      }
+      ul li {
+        list-style: none;
+      }
+      ul li a {
+        text-decoration: none;
+        color: gray;
+      }
+      ul img {
+        margin-right: 350px;
+      }
+      li a:hover {
+        color: black;
+      }
+      li a:active {
+        color: blueviolet;
+      }
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .section_first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .class2 {
+        font-size: x-large;
+        width: 914px;
+        margin: 20px;
+      }
+      .class1 {
+        font-size: 40px;
+      }
+      .class3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 96px;
+        margin-bottom: 40px;
+      }
+      .class4 button {
+        color: white;
+        background-color: #00b6d1;
+        border-radius: 7px;
+        width: 315px;
+        height: 50px;
+        font-size: 15px;
+        border: none;
+        font-weight: bolder;
+      }
+      .section_second div {
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 50px;
+        position: relative;
+        right: 140px;
+        font-size: x-large;
+      }
+      .section_second div span {
+        font-size: 14px;
+      }
+      .card {
+        width: 278px;
+        height: 240px;
+        border-radius: 5px;
+        background-color: rgb(235, 230, 230);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .grid .card{
+        justify-self:center ;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3,300px);
+        row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        column-gap:-50px ;
+      }
+      .card div button {
+        width: 193px;
+        height: 39px;
+        font-size: large;
+        background-color: #5cb85c;
+        margin-top: 80px;
+        border: none;
+        font-weight: bolder;
+        border-radius: 5px;
+      }
+      .card .button {
+        height: 200px;
+      }
+      .card div p {
+        justify-self: center;
+      }
+
+      .card div p {
+        margin-top: 50px;
+        font-size: large;
+      }
+      .card button a {
+        text-decoration: none;
+        color: white;
+      }
+      .class4 a{
+        text-decoration: none;
+        color: white;
+      }
+
+      /* media query */
+      @media (max-width:931px) {
+        .grid{
+        display: grid;
+        grid-template-columns: repeat(1,300px);
+        row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <div>
+            <img
+              src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
+              alt="logo"
+              width="190px"
+              height="60px"
+            />
+          </div>
+          <li>
+            <a href="">Product</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <li>
+            <a href="">Pricing</a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <li>
+            <a href="">Resources</a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+          <li>
+            <a href="">About us</a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="#000000"
+              fill="none"
+            >
+              <path
+                d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section_first">
+        <div class="class3">
+          <span class="class1">Download <b>UltraEdit</b> for Windows </span
+          ><img
+            src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png"
+            alt="logo"
+            width="120px"
+            height="30px"
+          />
+        </div>
+        <div class="class2">
+          Download and try UltraEdit before you buy it! This download includes
+          the full Windows version of the text editor.
+        </div>
+        <div class="class4"><button><a href="">DOWNLOAD MAC OR LINUX VERSION</a></button></div>
+      </section>
+      <section class="section_second">
+        <div>
+          Download UltraEdit <span>v2024.0(released 04/19/2024) | Hotfix</span>
+        </div>
+      </section>
+      <div class="grid">
+        <div class="card">
+          <div><p>English</p></div>
+          <div class="button">
+            <button><a href="" download>Download 64-bit</a></button></div>
+        </div>
+        <div class="card">
+          <div><p>English</p></div>
+          <div class="button"><button><a href="" download>Download 64-bit</a></button></div></div>
+        <div class="card">
+          <div><p>English</p></div>
+          <div class="button">
+            <button><a href="" download>Download 64-bit</a></button>
+          </div>
+        </div>
+        <div class="card">
+          <div><p>English</p></div>
+          <div class="button">
+            <button><a href="" download>Download 64-bit</a></button>
+          </div>
+        </div>
+        <div class="card">
+          <div><p>English</p></div>
+          <div class="button">
+            <button><a href="" download>Download 64-bit</a></button>
+          </div>
+        </div>
+        <div class="card">
+          <div><p>English</p></div>
+          <div class="button">
+            <button><a href=""download>Download 64-bit</a></button>
+          </div>
+        </div>
+        <div class="card">
+          <div><p>English</p></div>
+          <div class="button">
+            <button><a href=""download>Download 64-bit</a></button>
+          </div>
+        </div>
+        <div class="card">
+          <div><p>English</p></div>
+          <div class="button">
+            <button><a href=""download>Download 64-bit</a></button>
+          </div>
+        </div>
+        <div class="card">
+          <div><p>English</p></div>
+          <div class="button">
+            <button><a href=""download>Download 64-bit</a></button>
+          </div>
+        </div>
+        <div class="card">
+            <div><p>English</p></div>
+            <div class="button">
+              <button><a href=""download>Download 64-bit</a></button></div>
+          </div>
+      </div>
+    </main>
+  </body>
+</html>
