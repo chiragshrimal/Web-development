@@ -7,74 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: "Poppins", sans-serif;
-        }
-        body{
-            background-color: rgb(247, 247, 230);
-        }
-        /* appply flex on nav */
-        nav{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            margin-left:200px ;
-            margin-top: 20px;
-        }
-        nav div{
-            margin-right: 100px;
-        }
-        ul{
-            list-style: none;
-            display: flex;
-            gap: 100px;
-            justify-content: space-around;
-        }
-        a{
-            text-decoration: none;
-        }
-        main{
-            display: flex;
-            justify-content:space-around;
-            gap: 30px;
-        }
-        main .left_part{
-            margin-top:250px ;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 20px;
-        }
-        main .left_part h1{
-            font-size: xx-large;
-        }
-        button{
-            width: 117px;
-            height: 40px;
-            background-color:#3B855B;
-            color:white;
-            border-radius: 7px;
-            font-weight: bold;
-            border: none;
-        }
-
-
-
-
-
-
-
-
-
-    </style>
+<link rel="stylesheet" href="project2.css">
 </head>
 <body>
     <header>
         <nav>
-            <div><img src="file:///C:/Users/Chirag/Downloads/img1.png" alt="LOGO"></div>
+            <div><img src="..\images\logo.png" alt="LOGO"></div>
             <ul>
                 <li><a href="">Blog</a></li>
                 <li><a href="">Clam Playlist</a></li>
@@ -86,16 +24,16 @@
         <section class="left_part">
             <h1>Be Focus and <br> Productive</h1>
             <p>Not just an ordinary headphones. it's designed for meditation.</p>
-            <button>Learn more</button>
+            <button><a href="">Learn more</a></button>
         </section>
 
         <section class="right_part">
             <div>
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="../images/img1.png" alt="image1" width="200px" height="200px">
+                <img src="../images/img2.png" alt="image2" width="200px" height="200px">
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="image3">
+                <img src="../images/img3.png" alt="image3" width="420px" height="250px">
             </div>
         </section>
     </main>
