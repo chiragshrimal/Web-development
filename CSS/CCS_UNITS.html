@@ -9,16 +9,28 @@
     <!-- 2. relative like  percentage , em, rem ,vh  -->
 
     <style>
+        body{
+            width: 200px;
+        }
         div{
             border: 2px solid red;
             /* px devices pe depend nhi krta hai  */
             /* width: 100px; */
-            width: 50vw;
+            /* width: 50vw; */
+            /* width: 50%; */
+            width: 100px;
             background-color: red;
         }
         p{
             border: 2px solid black;
-            width: 60vw;
+            /* width: 60vw; */
+            /* percentage depends upon the parent width */
+            /* width: 100%; */
+            /* em depends upon the only  parent */
+            /* generally 1em =16px hota hai  */
+            /* width: 30em; */
+            /* body ke according kam krta hai body hi generally root hoti hai  */
+            width: 1rem;
             background-color: yellow;
         }
     </style>
@@ -26,7 +38,7 @@
 <body>
 
      <div>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>hello world</p>
      </div>
 
 </body>
