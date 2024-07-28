@@ -57,6 +57,11 @@ console.log(a3.indexOf(4))
 let arr1=[1,2,3,4,5,6]
 console.log(arr1.slice(2,5))// start ib=ndex se last -1  tak ke index ke element deta hai
 
+// kisi bhi index par element ko add krna ho to 
+
+arr1.splice(2,2,11,12);// phla kis index pe , dusra kitne elemet ko , tisra,forth,fifth.... kis ko insert krna hai 
+console.log(arr1);
+
 
 
 
