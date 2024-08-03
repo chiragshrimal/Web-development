@@ -29,6 +29,13 @@ function sum(num1,num2){
 let ans=sum(2,3);
 console.log(ans);
 
+function sum_number(a,b,c=3){
+    return a+b+c;
+}
+let store=sum_number(2,3);
+console.log(store);
+
+
 // function with unlimited number of parameter
 
 function sumOfAllParemeters(){

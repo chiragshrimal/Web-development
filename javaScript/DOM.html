@@ -17,13 +17,14 @@
 
     <!-- using class -->
      <p class="containt"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit voluptatem cumque exercitationem, ipsum itaque cupiditate veritatis accusamus maiores quo quod.</p>
+     <p class="containt"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quas possimus dicta optio exercitationem magnam aspernatur, asperiores nulla quaerat.</p>
 
-     <ol>
+     <ul>
         <l1 class="tech">one</l1>
         <l1 class="tech">two</l1>
         <l1 class="tech">three</l1>
-     </ol>
-    <!-- <script>
+     </ul>
+    <script>
         // using id
         // id is unique 
         let var1=document.getElementById("id1")
@@ -35,10 +36,13 @@
         let var2=document.getElementsByClassName("containt");
         // yha var2 ek array ko represent krega 
         // console.log(var2[0].innerText);
-
+        // if you want to change the inner text
+        // var2[0].innerText="kalu"
         let var3=document.getElementsByClassName("tech");
         // yha var3 ek array ko represent krega 
         // console.log(var3);
+
+        // change the inner text
         // var3[0].innerText="hola ";
 
         // by tag 
@@ -47,10 +51,28 @@
         // console.log(var4[0].innerText);
 
         // if you want to change the containt of h1 tag 
+        // var4[0].innerText="hello";
 
-        var4[0].innerText="hello";
+
+        // using queryselector
+        let var5=document.querySelector(".containt");
+        // only first element par kam krta hai 
+        // ye array wgr return nhi krta hai 
+        // agr esa koi selector nhi hone pe  null return krta hai 
+        console.log(var5.innerText);
+
+        // isse page pe drop down bnega 
+        // ye browser hi support krta hai 
+        alert("hello chirag");
+
+        // input lene ke liye promt ka use krte hai 
+        // ye browser hi support krta hai 
+        let a=prompt("enter a number");
+        console.log(a);
 
 
-    </script> -->
+
+
+    </script>
 </body>
 </html>
