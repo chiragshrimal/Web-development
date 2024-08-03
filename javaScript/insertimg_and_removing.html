@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting and Removing </title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX1</div>
+        <div class="box">BOX2</div>
+        <div class="box">BOX3</div>
+        <div class="box">BOX4</div>
+        <div class="box">BOX5</div>
+    </div>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+
+    <script>
+        // insertion
+        let div=document.createElement("div");
+        div.innerHTML="i am chirag shrimal"
+        div.setAttribute("class","created");
+
+        let element=document.createElement("h1")
+        element.style.fontSize="100px";
+        element.textContent="i am the Boss"
+        element.style.color="green";
+        console.log(element)
+        document.body.append(element);
+
+        // .append m last m insert hota hai
+        // .prepend m phle insert hota hai
+        // .before m us pure tag ke phle hi insert kar  deta hai 
+        // .after m us pire tag ke bad hi insert kar deta hai 
+        // document.querySelector(".container").prepend(div);
+
+        // remove
+        document.querySelector(".box").remove();
+
+        let ul=document.querySelector("ul");
+        console.log(ul)
+        // contain all the li element 
+        let  lists=document.querySelectorAll("li");
+        // remove all the li elements 
+        for(list of lists){
+            ul.remove(list)
+        }
+
+        // insert and remove class name 
+
+        console.log(document.querySelector(".container").classList)
+
+        console.log(document.querySelector(".container").classList.add("chirag"));
+
+        console.log(document.querySelector(".container").classList.remove("chirag"))
+        
+
+        // nhi hai toh aa jayegi and hai toh gayab ho jayegi 
+        console.log(document.querySelector(".container").classList.toggle("chirag"))
+        
+
+
+    </script>
+</body>
+</html>

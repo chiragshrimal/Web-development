@@ -55,10 +55,17 @@
 
 
         // using queryselector
-        let var5=document.querySelector(".containt");
-        // only first element par kam krta hai 
+         // only first element par kam krta hai 
         // ye array wgr return nhi krta hai 
         // agr esa koi selector nhi hone pe  null return krta hai 
+        let var5=document.querySelector(".containt");
+       
+        // saare ke saare element ko exess  krne ke liye
+        // we can iterate over this 
+        let var9=document.querySelectorAll(".containt");
+        console.log(var9)
+
+
         console.log(var5.innerText);
 
         // isse page pe drop down bnega 
