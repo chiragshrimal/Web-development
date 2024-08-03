@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listner</title>
+</head>
+<body>
+    <h1>PW SKILL</h1>
+    <P id="js"></P>
+    <!-- yha pe onclick hi saara kam kar deta hai -->
+     <!-- isme function ke sath () lgate hai  -->
+    <button  onclick="hey()" id="btn">Submit</button>
+
+    <script>
+        // dblclick ,click,mouseenter etc
+        // isme functionn ke saath () nhi lgate hai 
+        document.addEventListener("click",hello);
+
+        function hello(){
+            let p=document.getElementById("js");
+            p.innerText="Namaste"
+        }
+
+        function hey(){
+            let btn=document.getElementById("btn");
+            btn.innerText="Namaste"
+            btn.style.padding="16px";
+            btn.style.color="green";
+            btn.style.backgroundColor="red";
+            btn.style.border="2px solid black"
+            btn.style.fontWeight="bolder";
+        }
+    </script>
+
+</body>
+</html>

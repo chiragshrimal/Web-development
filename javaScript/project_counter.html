@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Counter</title>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 200px;
+            margin-bottom: 40px;
+        }
+
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            font-size: 20px;
+            border: 2px solid black;
+            font-weight: bolder;
+            border-radius: 5px;
+        }
+        #container{
+            background-color: #FFFFFF;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;"> Counter App</h1>
+
+    <div>
+        <button id="decrement">Decrement By 1</button>
+        <button id="container">0</button>
+        <button id="increment">Increment By 1</button>
+        
+    </div>
+    <footer>
+        <button id="reset">Reset value</button>
+    </footer>
+
+    <script>
+        let container=document.getElementById("container")
+        let decrement=document.getElementById("decrement");
+        let increment =document.getElementById("increment");
+        let reset=document.getElementById("reset");
+
+        decrement.addEventListener("click",dec)
+        reset.addEventListener("click",res);
+        increment.addEventListener("click",inc)
+
+        function dec(){
+            let num=parseInt(container.innerText)-1
+            container.innerText=num;
+        }
+
+        function res(){
+            container.innerText=0;
+        }
+
+        function inc(){
+            let num=parseInt(container.innerText)+1
+            container.innerText=num;
+        }
+
+    </script>
+
+</body>
+</html>
