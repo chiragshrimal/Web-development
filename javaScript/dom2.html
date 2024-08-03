@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part 2</title>
+    <style>
+        .box{
+            height: 45px;
+            width: 56px;
+            margin: 10px;
+            border: 2px solid black;
+            padding: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>
+    <script>
+        // using parent child how to exess element 
+        console.log("hello world")
+        // ye includung text bhi dega 
+        console.log(document.body.childNodes);
+
+        // ydi hm only html elements ko hi chahte hai then 
+
+        console.log(document.body.children);
+
+        console.log(document.body.childNodes[1].childNodes)
+
+        // phla child text hoga bacause ye comment or space or text ko text manta hai 
+        console.log(document.body.firstChild)
+
+        // ydi hm chahte hai ki first element child mile 
+        console.log(document.body.firstElementChild);
+
+        // we can also use previous sibling and next sibling concept
+
+        console.log(document.body.firstElementChild.firstElementChild.nextElementSibling)
+
+        // also we can get parent element 
+        console.log(document.body.firstElementChild.parentNode)
+
+    </script>
+</body>
+</html>
