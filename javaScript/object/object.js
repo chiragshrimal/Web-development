@@ -72,3 +72,4 @@ console.log(newobj);
 // check element present or not
 console.log(emp.hasOwnProperty('name')); // true
 console.log(emp.hasOwnProperty('salary')); // false
+     

@@ -22,7 +22,7 @@ class product{
     // in js we can not create another constructor
 
     // behaviour->function member function
-    // sarre ke ke saare objects m sam esame hoga 
+    // sarre ke ke saare objects m same same hoga 
 
     Display(){
         // console.log("hellooo")

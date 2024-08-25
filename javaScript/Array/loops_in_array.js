@@ -30,6 +30,7 @@ arr.map((element,index,arr)=>{
 const  heros =["nagraj","chirag","raj","ritik","salman"];
 
 heros.forEach((element)=>{
+    // actual m convert nhi hota 
     console.log(element.toUpperCase());
 })
 
@@ -58,7 +59,7 @@ const gameScore=[100,200,300,310,400]
 
 // typeof string return krta hai
 console.log(typeof gameScore[1])
-const check=gameScore.every((val)=> typeof val ==='number')
+const check=gameScore.every((val)=> typeof val ==="number")
 
 console.log(check)
 

@@ -3,9 +3,7 @@
 
 
 // arrow function 
-const powerTwo=(n)=>{
-    return n**2
-}
+const powerTwo=(n)=>n**2
 
 function powerCube(powerTwo,n){
     return powerTwo(n)*n
@@ -64,9 +62,12 @@ function oneMoreHello(){
 }
 
 // ye particular interval m kuch kam krta hai 
+// yha time milisecond m hota hai 
 // setInterval(oneMoreHello,1000)
 
+
 // ek hi bar kam hoga in --- seconds 
+// time is in milisecond 
 setTimeout(oneMoreHello,2000)
 
 
