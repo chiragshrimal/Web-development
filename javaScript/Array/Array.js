@@ -20,7 +20,7 @@ console.log(arr)
 
 // remove element from last endex
 // ye element bhi return krta hai 
-arr.pop();
+let value=arr.pop();
 console.log(arr)
 
 // remove from first index
