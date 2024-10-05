@@ -40,8 +40,8 @@ heros.forEach((element)=>{
 // ydi hme saare ke saare element se matlab nhi hai kuch hi chahiye 
 // then we will use filter
 
-const heroWithRaj=heros.filter((h)=>{
-    return h.endsWith("raj")
+const heroWithRaj=heros.filter((element)=>{
+    return element.endsWith("raj")
 })
 console.log(heroWithRaj)
 
@@ -59,7 +59,7 @@ const gameScore=[100,200,300,310,400]
 
 // typeof string return krta hai
 console.log(typeof gameScore[1])
-const check=gameScore.every((val)=> typeof val ==="number")
+const check=gameScore.every((val)=> {return typeof val ==="number"})
 
 console.log(check)
 

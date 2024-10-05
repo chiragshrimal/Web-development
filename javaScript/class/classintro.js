@@ -1,6 +1,7 @@
 // class is like blueprint 
 // using class we can create many objects
 class product{
+    // by default public hota hai
     // property->variable->data member
     // name;
     // price;
@@ -14,7 +15,7 @@ class product{
         this.#name=n
         this.price=p
         this.rating=r
-        // if u dont return return anything it will return object refferced by this
+        // if u dont return anything it will return object refferced by this
         // return 10;  if u are  returning  premitive then it will avoided by constructor
         // return {x:10}   if u are returning non-premitive then it will return by constructor
     }

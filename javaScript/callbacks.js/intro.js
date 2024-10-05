@@ -7,7 +7,7 @@
 // us case m execution alg trh se hota hai 
 // timer wgr ko run enviournment triggger krta hai
 // put into the queses 
-// event lopp continuesly checking the call stack empty of not or execution of code complete or not 
+// event loop continuesly checking the call stack empty of not or execution of code complete or not 
 // if both are empty then queses m wait krne wale function ka number aata hain
 
 
@@ -21,7 +21,7 @@ setTimeout(function(){
     console.log("time done 1");
 },2000);
 
-// for(let i=0;i<100000000;i++){}
+for(let i=0;i<1000000000;i++){}
 
 setTimeout(function(){
     console.log("time done 2")
@@ -29,7 +29,7 @@ setTimeout(function(){
 
 setTimeout(function(){
     console.log("time done 3")
-},1000)
+},5000)
 
 
 console.log("end")
@@ -39,5 +39,6 @@ console.log("end")
 // 1. readebility 
 // nested heigher order function honge toh dikkat hogi readebility m 
 // 2. inversion control problem 
+// callback function ka control kisi or function ko de diya 
 // means function ko kisi dusre function m bhejne par pta nhi kya hi hoga 
 

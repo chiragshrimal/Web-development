@@ -43,14 +43,13 @@ function sumOfAllParemeters(){
     for(let i=0;i<arguments.length; i++){
         sum+=arguments[i];
     }
-    return sum;
+    return sum;     
 }
 // saare ke ke saare argument jake argument array bn jata hai 
 let answer=sumOfAllParemeters(1,2,3,4,5,6);
 console.log(answer);
 
 // Arrow function 
-
 // in the arrow function  unlimited arguments wala concept not define 
 // 1. one parameter , and a single return statement 
 const squre=(x)=>x*x

@@ -26,7 +26,7 @@ console.log(result)
 let finalResult=string.match(regrexThree);
 console.log(finalResult);
 
-
+ 
 // replace 
 // first parameter is regEXp and second is uski jgh kisko lgana hai 
 let replace=string.replace(regrexThree,"p-w")
