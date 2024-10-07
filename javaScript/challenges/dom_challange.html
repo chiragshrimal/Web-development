@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .container{
+            /* height: 500px; */
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            border-radius: 3px;
+            border: 2px solid black;
+            margin-right: 30px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX 1</div>
+        <div class="box">BOX 2</div>
+        <div class="box">BOX 3</div>
+        <div class="box">BOX 4</div>
+        <div class="box">BOX 5</div>
+    </div>
+    <script>
+        function createColor(){
+            let string="0123456789ABCDEF";
+            let makeString="#";
+            for(let i=0;i<6;i++){
+                makeString+=string[Math.ceil(Math.random()*15)];
+            }
+            return makeString;
+        }
+        function colorChange(){
+            var element=document.getElementsByClassName("box");
+            for(let i=0;i<5;i++)
+            element[i].style.backgroundColor = createColor();
+        }
+
+        document.addEventListener("click",colorChange);
+        
+    </script>
+</body>
+</html>

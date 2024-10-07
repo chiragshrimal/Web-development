@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Card</title>
+    <style>
+        .container{
+            width: 1000px;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .card{
+            width: fit-content;
+            height: fit-content;
+            border: 2px solid black;
+            border-radius: 2px;
+            display: flex;
+        }
+        .tittle{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .other{
+            display: flex;
+            gap: 20px;
+        }
+        .imag{
+            position: relative;
+        }
+        .imag .capsule{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color:white;
+            background: black;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+
+    <script src="create_card.js"></script>
+
+</body>
+</html>
