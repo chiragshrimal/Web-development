@@ -4,10 +4,11 @@
 // parallel execution nhi hota hai 
 
 // kuch ese sintax hote hai jo native nhi hote hai 
+// jinhe run time enviournment handle krta hai 
 // us case m execution alg trh se hota hai 
 // timer wgr ko run enviournment triggger krta hai
 // put into the queses 
-// event loop continuesly checking the call stack empty of not or execution of code complete or not 
+// event loop continuesly checking the call stack empty or not and execution of code complete or not 
 // if both are empty then queses m wait krne wale function ka number aata hain
 
 

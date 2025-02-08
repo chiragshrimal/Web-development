@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <script>
+        // we can store string in local storage so the browser can remember 
+
+        if(localStorage.getItem("name")!=null){
+            a=localStorage.getItem("name");
+            document.write("Welcome "+a);
+        }else{
+
+            let a=prompt("enter your name");
+            localStorage.setItem("name",a)
+            document.write("welcome "+a)
+        }
+        
+    </script>
+</body>
+</html>

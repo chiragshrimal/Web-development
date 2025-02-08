@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD NOTE</title>
+</head>
+<body>
+    <button>Button</button>
+
+    <script>
+            let note=localStorage.getItem("note");
+            if(note!=null){
+            document.write(note);
+            }
+            document.querySelector("button").addEventListener("click",()=>{
+                let note =prompt("enter your note");
+                localStorage.setItem("note",note);
+                document.write(note);
+            })
+    </script>
+</body>
+</html>

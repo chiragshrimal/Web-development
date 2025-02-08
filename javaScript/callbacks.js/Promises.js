@@ -5,7 +5,7 @@
 // jitna bhi achynchronus code hai use promises ke saath bind kar dete hain 
 // initially promise ki state pandding hogi 
 // and value is undefined 
-// after complete the promise then resole or reject m jo value hai vhi promises ki value ho jati hai 
+// after complete the promise then resolve or reject m jo value hai vhi promises ki value ho jati hai 
 // in case of promises two type of queue is mentained 
 // 1. macro queue for callback 
 // 2. micro queue for x.then ke callback ke liye 
@@ -17,7 +17,7 @@
 // reject ke corresponding catch ka callback call hota hai 
 // finally toh always execute krta hai 
 // like try catch m jis trh se use krte hai 
-// then also give the promises
+// then  also give the promises
 
 function createPromise(){
     return new Promise(function exec(resolve,reject){
